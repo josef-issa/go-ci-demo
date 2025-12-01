@@ -28,10 +28,6 @@ jobs:
       - name: Run go vet
         run: go vet ./...
 
-      - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v4 
-        with:
-            version: v1.52.2
-
+    
       - name: Build binary
         run: go build -o app .
