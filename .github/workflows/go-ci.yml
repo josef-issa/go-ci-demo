@@ -29,7 +29,7 @@ jobs:
         run: go vet ./...
 
       - name: Run golangci-lint
-        uses: golangci/gilangci-lint-action@v4 
+        uses: golangci/golangci-lint-action@v4 
         with:
             version: latest
 
