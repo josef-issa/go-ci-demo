@@ -28,5 +28,10 @@ jobs:
       - name: Run go vet
         run: go vet ./...
 
+      - name: Run golangci-lint
+        uses: golangci/gilangci-lint-action@v4 
+        with:
+            version: latest
+
       - name: Build binary
         run: go build -o app .
